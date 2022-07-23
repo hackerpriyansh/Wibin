@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./dist/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./dist/owl.carousel.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../utils.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.css" integrity="sha512-ITS8GbPjCRA7c/PBl6Kqb9XjvQbKMBXpzEmpi7BgRwf6mUCySmHbF9opWfVUQvbdiYouDYxhxttWS+wyq4l+Ug==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./dist/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.3/rangeslider.min.css"
+        integrity="sha512-Rp0yZ3NMh1xOUZ4VHYggmX4pq4ZJdpcOETH03qBD5qNDsqTBw1MzUnX0T5PcTJmr2mNTOmtbxsHaGwzjylNpHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+</head>
+
+<body>
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                    
+              </div>
+            </div>
+          </div>
+
+    <section class="hero min-vh-100 py-5">
+
+        <nav class="navbar m-auto navbar-expand-lg navbar-light w-90 " id="navbar">
+            <div class="container-fluid header w-110">
+                <div class="navbar-brand col-md-2">
+                    <img src="./images/logo.png" height="50px">
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" onclick="changeBorder()"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto justify-evenly w-70 mb-lg-">
+                        <li class="nav-item ">
+                            <a href="#" class="nav-link"  >Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Feature</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" onclick="comingSoon()">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" onclick="comingSoon()">Contact</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a href="#" class="nav-link">About Us</a>
+                        </li> -->
+                    </ul>
+                    <div class="extras col-md-3">
+                        <div class="row justify-content-end align-items-center">
+                            <div class="login col-md-3">
+                                <a href="" onclick="comingSoon()">
+                                    Login
+                                </a>
+                            </div>
+                            <div class="col-md-9">
+                                <button class="btn-dark py-1 px-2" onclick="comingSoon()" id="btn-1">Sign Up</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="main container">
+            <div class="row">
+                <div class="info col-md-6">
+                    <h1><strong>WIBIN</strong></h1>
+                    <h3>A smart approach.</h3>
+                    <p class="my-4">An upcoming three-in-one virtual platform offering you all the features you need in
+                        one place. Along with video conferencing, we deliver to you, a planner- to keep track of your
+                        scheduled meetings, a chat facility and an assistant bot, personalized to your needs. An
+                        integration of multiple professional platforms with successful utilization of present-day
+                        innovations, accessible on iOS, Android and web, it allows users to construct several servers
+                        with sub-servers for meetings. </p>
+
+                        <!-- buttons   -->
+                    <!-- <button class="btn-dark px-2 py-1 m-2 col-sm-6" id="btn-2">Primary Button</button>
+                    <a href="" class="col-sm-6">Tertiary Button</a> -->
+
+                    
+                </div>
+            </div>
+        </div>
+       
+       <!-- carousel -->
+        <!-- <div class="carousel m-auto bg-light p-3 border border-white">
+            <div class="row align-items-center">
+                <div class="d-flex major-carousel owl-carousel js-carousel">
+                    <div>
+                        <div class="media media-custom d-block text-left">
+                            <a href="">
+                                <img src="./images/Amazon.png" alt="" height="50px" width="100px">
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="media media-custom d-block text-left">
+                            <a href="">
+                                <img src="./images/pepsi.png" alt="" height="50px">
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="media media-custom d-block text-left">
+                            <a href="">
+                                <img src="./images/flipkart.png" alt="" height="50px">
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="media media-custom d-block text-left">
+                            <a href="">
+                                <img src="./images/microsoft.png" alt="" height="50px">
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="media media-custom d-block text-left">
+                            <a href="">
+                                <img src="./images/coke.png" alt="" height="50px">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </section>
+    <section class="features min-vh-100">
+        <div class="features-heading container py-lg-5 py-sm-2 my-2 text-center">
+            <h3>WHAT WE DO</h3>
+            <h1 class="my-2">Amazing features to convince you
+                to use our application
+            </h1>
+        </div>
+        <div class="container my-5">
+            <div class="feature row p-4 flex-column-reverse flex-lg-row align-items-center  justify-content-center">
+                <div class="col-md-5 d-flex flex-column feature-description">
+                    <h3 class="my-2">Video Confrencing</h3>
+                    <p class="my-2">
+                        This newly designed e-platform to conduct video conferencing meetings online, accessible to
+                        all where you’re
+                    <ul class="my-2">
+                        <li>Able to create servers</li>
+                        <li>Host upto 256 participants</li>
+                        <li>Provided unlimited time access</li>
+                    </ul>
+                    </p>
+                </div>
+                <div class="col-md-5 feature-lottie">
+                    <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_jdqkcnl5.json"
+                        background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay>
+                    </lottie-player>
+                </div>
+            </div>
+
+            <div class="feature row p-4 align-items-center  justify-content-center">
+                <div class="col-md-5 feature-lottie">
+                    <lottie-player src="https://assets7.lottiefiles.com/private_files/lf30_BP4Us7.json"
+                        background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay>
+                    </lottie-player>
+                </div>
+                <div class="col-md-5 d-flex flex-column feature-description">
+                    <h3 class="my-2">Planner</h3>
+                    <p class="my-2">
+                        Now, join and schedule plans easily using this feature and get notified on existing meetings
+                        updated on the server as per your scheduled plans.
+                    </p>
+                </div>
+            </div>
+
+            <div class="feature row p-4 flex-column-reverse flex-lg-row align-items-center  justify-content-center">
+
+                <div class="col-md-5 d-flex flex-column feature-description">
+                    <h3 class="my-2">Chat System</h3>
+                    <p class="my-2">
+                        With the help of our chat facility, you can now send and receive messages, calls, location,
+                        files, audio files and attachments
+
+                    </p>
+                </div>
+
+                <div class="col-md-5 feature-lottie">
+                    <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_QpolL2.json"
+                        background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay>
+                    </lottie-player>
+                </div>
+            </div>
+
+            <div class="feature row p-4 align-items-center  justify-content-center">
+                <div class="col-md-5 feature-lottie">
+                    <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_lphquaqr.json"
+                        background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay>
+                    </lottie-player>
+                </div>
+                <div class="col-md-5 d-flex flex-column feature-description">
+                    <h3 class="my-2">AI Bot</h3>
+                    <p class="my-2">
+                        Explore our A.I centered speaking assistant that allows its users to communicate in real time.
+                        Voice/chat command :
+                    <ul class="my-2">
+                        <li>To schedule/cancel tasks</li>
+                        <li>To join meetings automatically</li>
+                        <li>To open and exit the application</li>
+                    </ul>
+                    Say for example “Eva, schedule an assignment for Class A at 12PM”
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <!-- <section class="pricing vh-100 py-5">
+        <div class="container">
+            <h1 class="my-2 text-center">Easy Affordable Pricing</h1>
+            <div class="container price p-5 my-2">
+                <div class="row  my-3">
+                    <div class="range  col-md-6">
+                        <h5 class="text-left">Number of Members</h5>
+                        <output id="members" name="amount" for="rangeInput">1</output><br>
+                        <input type="range" id="rangeInput" name="rangeInput" min="0" max="20" value="1" oninput="members.value=rangeInput.value" style="width:50%">
+                    </div>
+
+                    <div class="payment-price col-md-6">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="meet-team">
+        <div class="meet-team-heading container text-center">
+            <h1 class="my-2">Meet our team</h1>
+        </div>
+        <div class="container meet-team-description my-5">
+            <div class="row justify-content-center justify-content-around text-center">
+                <div class="col-sm-3 card p-3">
+                    <div class="card-body">
+                        <img src="./images/1.jpeg" height="140px">
+                        <h3 class="my-2">Member 1</h3>
+                        <p class="my-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus ipsum viverra etiam.</p>
+                        <a href="" class="my-2"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-3 card p-3">
+                    <div class="card-body">
+                        <img src="./images/2.jpeg" height="140px" >
+                        <h3 class="my-2">Member 2</h3>
+                        <p class="my-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus ipsum viverra etiam.</p>
+                        <a href="" class="my-2"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-3 card p-3">
+                    <div class="card-body">
+                        <img src="./images/3.jpeg" height="140px" >
+                        <h3 class="my-2">Member 3</h3>
+                        <p class="my-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus ipsum viverra etiam.</p>
+                        <a href="" class="my-2"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container meet-team-description">
+            <div class="row justify-content-center justify-content-around text-center">
+                <div class="col-sm-3 card p-3">
+                    <div class="card-body">
+                        <img src="./images/1.jpeg" height="140px">
+                        <h3 class="my-2">Member 1</h3>
+                        <p class="my-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus ipsum viverra etiam.</p>
+                        <a href="" class="my-2"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-3 card p-3">
+                    <div class="card-body">
+                        <img src="./images/2.jpeg" height="140px" >
+                        <h3 class="my-2">Member 2</h3>
+                        <p class="my-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus ipsum viverra etiam.</p>
+                        <a href="" class="my-2"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-3 card p-3">
+                    <div class="card-body">
+                        <img src="./images/3.jpeg" height="140px" >
+                        <h3 class="my-2">Member 3</h3>
+                        <p class="my-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus ipsum viverra etiam.</p>
+                        <a href="" class="my-2"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
